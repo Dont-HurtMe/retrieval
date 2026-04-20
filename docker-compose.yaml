@@ -10,6 +10,7 @@ services:
     volumes:
       - qdrant_data:/qdrant/storage
     restart: unless-stopped
+    
   search_api:
     build: .
     container_name: search-api
